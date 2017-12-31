@@ -1,0 +1,10 @@
+@for $i from 0 to 20 {
+  .padding {
+    &-y {
+      &_#{$i} {
+        padding-top:#{$i}px;
+        padding-bottom:#{$i}px;
+      }
+    }
+  }
+}

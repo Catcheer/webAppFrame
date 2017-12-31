@@ -1,27 +1,37 @@
 <template>
   <div id="app">
+    <transition name="slide-left">
       <router-view/>
-   <footer>
-      <ul class="flex bottom_0 position-fixed">
-        <li class="flex_1">首页</li>
-        <li class="flex_1">图表</li>
-        <li class="flex_1">我的</li>
-        <li class="flex_1">待定</li>
+    </transition>
+    <footer>
+      <ul class="flex bottom_0 position-fixed width-pre_100 height_45 line-height_45 bg-f1f1f1 font_32">
+        <li class="flex_1 text-center">
+          <router-link to="/">首页</router-link>
+        </li>
+        <li class="flex_1 text-center">
+          <router-link :to="{name:'EchartsMenu'}"> 图表</router-link>
+        </li>
+
+        <li class="flex_1 text-center">
+          <router-link to="/user"> 我的</router-link>
+        </li>
+        <li class="flex_1 text-center">
+          <router-link to="/"> 待定</router-link>
+        </li>
       </ul>
-   </footer>
+    </footer>
 
   </div>
 </template>
 
 <script>
+  export default {
+    name: "app"
+  };
 
-export default {
-  name: "app"
-};
 </script>
 
 <style lang="scss">
-  @import './assets/scss/app.scss'
+  @import "./assets/scss/app.scss";
+
 </style>
-
-

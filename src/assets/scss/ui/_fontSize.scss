@@ -1,0 +1,5 @@
+@for $i from 0 to 20 {
+  .font-size_#{$i} {
+    font-size:#{$i}px;
+  }
+}
