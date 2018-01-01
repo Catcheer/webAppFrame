@@ -4,7 +4,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    LoadingShow: false,
+    LoadingShow: true,
   },
   mutations: {
     hideLoading(state) {

@@ -6,19 +6,23 @@ import router from './router'
 import Element from 'element-ui'
 import Vuex from 'vuex'
 
-
 import store from './store/store'
 // import 'element-ui/lib/theme-chalk/index.css'
 
-Vue.use(Element, { size: 'small' })
+Vue.use(Element, {
+  size: 'small'
+})
+// 注册组件后即可使用
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
+const app = new Vue({
   el: '#app',
   store,
   router,
   template: '<App/>',
-  components: { App }
+  components: {
+    App
+  }
 })

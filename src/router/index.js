@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Echarts from '../components/Echarts'
+import EchartsPage from '../components/EchartsPage'
 import User from '../components/User'
 import EchartsMenu from '../components/EchartsMenu'
 import EchartsContent from '../components/EchartsContent'
@@ -19,7 +19,7 @@ const router = new Router({
     {
       path: '/echarts',
       // name: 'EchartsMenu',
-      component: Echarts,
+      component: EchartsPage,
       children: [{
         // 当 /user/:id/profile 匹配成功，
         // UserProfile 会被渲染在 User 的 <router-view> 中
